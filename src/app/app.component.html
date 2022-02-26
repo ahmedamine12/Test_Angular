@@ -1,8 +1,2 @@
-<h1>{{title}}</h1>
-<input 
-type="text"
- #box (keyup)="getValue(box.value)" 
- placeholder="Entrer input" 
- name="user"
- />
-<p> Le contenu de l'entry : {{affichage}}</p>
+<input type="text" [(ngModel)]="title" (ngModelChange)="getValue()">
+ <h1>{{title}}</h1>
