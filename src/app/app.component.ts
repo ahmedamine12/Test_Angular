@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'amine';
+  affichage = '';
+  
+  getValue(val:string)
+  {
+    console.log(val)
+    this.affichage=val;
+  
+  }
 }
