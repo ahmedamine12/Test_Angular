@@ -6,13 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'amine';
-  affichage = '';
-  
-  getValue(val:string)
+  title = '';  
+  getValue()
   {
-    console.log(val)
-    this.affichage=val;
+    console.log(this.title)
+   
   
   }
 }
+
+
